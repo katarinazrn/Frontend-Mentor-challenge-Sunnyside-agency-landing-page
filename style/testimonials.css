@@ -57,7 +57,7 @@
   color: var(--grayish-blue);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   #cards {
     flex-direction: column;
   }
