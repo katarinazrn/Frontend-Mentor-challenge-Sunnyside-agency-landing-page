@@ -44,7 +44,7 @@
   fill: var(--white);
 }
 
-@media (max-width: 435px) {
+@media (max-width: 375px) {
   #images img {
     width: 50%;
     float: left;
