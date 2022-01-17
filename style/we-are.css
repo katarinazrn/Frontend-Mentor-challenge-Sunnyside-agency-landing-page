@@ -48,17 +48,19 @@
   }
 
   #we-are #bg {
-    height: 100%;
+    width: 100%;
+    height: auto;
     position: relative;
   }
 
   #center {
-    position: relative;
+    position: absolute;
     padding-top: 30px;
     background-color: var(--blue);
   }
+
   #arrow {
-    margin-bottom: -120px;
+    margin-bottom: -40px;
     width: 28px;
     height: 91px;
   }
