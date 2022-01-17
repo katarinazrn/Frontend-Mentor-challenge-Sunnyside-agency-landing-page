@@ -1,59 +1,68 @@
-#testimonials{
-    color: var(--grayish-blue);
-    padding: 30px;
-    background-color: var(--background);
+#testimonials {
+  color: var(--grayish-blue);
+  padding: 30px;
+  background-color: var(--background);
 }
 
-#testimonials h4{
-    font-family: "Fraunces", serif;
-    padding-bottom: 24px;
-    text-align: center;
-    font-size: 15px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+#testimonials h4 {
+  font-family: "Fraunces", serif;
+  padding-bottom: 24px;
+  text-align: center;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
-#cards{
-    display: flex;
-    justify-content: center;
+#cards {
+  display: flex;
+  justify-content: center;
 }
 
-.card{
-    padding: 10px;
-    display: flex;
+.card {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  border-radius: 50%;
+  width: 50px;
+  margin: 0 auto;
+}
+
+.card p {
+  text-align: center;
+  padding: 4px;
+}
+
+.card .text {
+  color: var(--very-dark-desaturated-blue);
+  line-height: 18px;
+  font-size: 11px;
+  margin: 18px 0;
+  font-weight: 700;
+  font-family: "Barlow", sans-serif;
+}
+
+.personal .name {
+  font-family: "Fraunces", serif;
+  font-size: 14px;
+  color: black;
+  font-weight: 900;
+}
+
+.personal .role {
+  font-size: 11px;
+  font-family: "Fraunces", serif;
+  color: var(--grayish-blue);
+}
+
+@media (max-width: 375px) {
+  #cards {
     flex-direction: column;
-}
+  }
 
-.card img{
-    border-radius: 50%;
-    width: 50px;
-    margin: 0 auto;
-}
-
-.card p{
-    text-align: center;
-    padding: 4px;
-}
-
-.card .text{
-    color: var(--very-dark-desaturated-blue);
-    line-height: 18px;
-    font-size: 11px;
-    margin: 18px 0;
-    font-weight: 700;
-    font-family: 'Barlow', sans-serif;
-}
-
-.personal .name{
-    font-family: "Fraunces", serif;
-    font-size: 14px;
-    color: black;
-    font-weight: 900;
-}
-
-
-.personal .role{
-    font-size: 11px;
-    font-family: "Fraunces", serif;
-    color: var(--grayish-blue);
+  .card{
+      margin: 20px 0;
+  }
 }

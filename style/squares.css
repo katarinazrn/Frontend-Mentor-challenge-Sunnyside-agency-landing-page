@@ -70,12 +70,20 @@
   margin-top: -6px;
 }
 
-.square .underline#yellow {
+.square #yellow div {
   background-color: rgba(255, 196, 0, 0.267);
 }
 
-.square .underline#pink {
+.square #pink div {
   background-color: rgba(255, 0, 76, 0.192);
+}
+
+.square #yellow:hover div {
+  background-color: rgba(255, 196, 0, 0.575);
+}
+
+.square #pink:hover div {
+  background-color: rgba(255, 0, 76, 0.527);
 }
 
 .text-over {
@@ -91,7 +99,7 @@
 }
 
 .text-over .text p {
-  padding: 0 18%;
+  padding: 10px 21%;
 }
 
 .text-over h3 {
@@ -107,4 +115,53 @@
 .text-over #gray,
 .text-over #gray p {
   color: var(--dark-desaturated-cyan);
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 375px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row.reverse {
+    flex-direction: column-reverse;
+  }
+
+  .square {
+    width: 100vw;
+    height: 100vw;
+    text-align: center;
+  }
+
+  .square #yellow,
+  .square #pink {
+    margin: 0 auto;
+  }
+
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+  .text-over .square {
+    position: relative;
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+
+  .text-over .text{
+    width: 100%;
+  }
+
+  .text-over .text p{
+    padding: 30px 16px;
+    margin: 0 auto;
+  }
+
 }

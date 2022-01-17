@@ -18,14 +18,18 @@
     <title>Frontend Mentor | Sunnyside agency landing page</title>
   </head>
   <body>
-    <header>
-      <div>
-        <img src="images/logo.svg" alt="logo" />
-        <nav>
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Projects</a>
-          <a href="#" id="active">Contact</a>
+    <header id="header">
+      <div id="logo">
+        <img src="./images/logo.svg" alt="logo" />
+        <img id="menu-icon" src="./images/icon-hamburger.svg" alt="menu" />
+      </div>
+      <div id="menu">
+        <div id="triangle"></div>
+        <nav id="nav">
+          <a href="#" title="About">About</a>
+          <a href="#" title="Services">Services</a>
+          <a href="#" title="Projects">Projects</a>
+          <a href="#" title="Contact" id="active">Contact</a>
         </nav>
       </div>
     </header>
@@ -41,7 +45,7 @@
       <img id="bg" src="./images/desktop/image-header.jpg" alt="header-image" />
     </div>
     <div id="squares">
-      <div class="row">
+      <div class="row reverse">
         <div class="square">
           <h2>Transform your brand</h2>
           <p>
@@ -49,9 +53,9 @@
             grow fast. Engage your clients through compelling visuals that do
             most of the marketing for you.
           </p>
-          <a href="#">
+          <a href="#" id="yellow">
             <span>Learn more</span>
-            <div id="yellow" class="underline"></div>
+            <div class="underline"></div>
           </a>
         </div>
         <div class="square img">
@@ -69,16 +73,16 @@
             photographers, videographers, and copywriters, we’ll build and
             extend your brand in digital places.
           </p>
-          <a href="#">
+          <a href="#" id="pink">
             <span>Learn more</span>
-            <div id="pink" class="underline"></div>
+            <div class="underline"></div>
           </a>
         </div>
       </div>
-
       <div class="row text-over">
         <div class="square img">
-          <img src="./images/desktop/image-graphic-design.jpg" />
+          <img class="desktop" src="./images/desktop/image-graphic-design.jpg" />
+          <img class='mobile' src="./images/mobile/image-graphic-design.jpg" />
           <div class="text" id="gray">
             <h3>Graphic design</h3>
             <p>
@@ -89,7 +93,8 @@
           </div>
         </div>
         <div class="square img">
-          <img src="./images/desktop/image-photography.jpg" />
+          <img class="desktop" src="./images/desktop/image-photography.jpg" />
+          <img class="mobile" src="./images/mobile/image-photography.jpg" />
           <div id="blue" class="text">
             <h3>Photography</h3>
             <p>
@@ -141,10 +146,14 @@
     </div>
     <footer>
       <div id="images">
-        <img src="./images/desktop/image-gallery-milkbottles.jpg" />
-        <img src="./images/desktop/image-gallery-orange.jpg" />
-        <img src="./images/desktop/image-gallery-cone.jpg" />
-        <img src="./images/desktop/image-gallery-sugarcubes.jpg" />
+        <img class="desktop" src="./images/desktop/image-gallery-milkbottles.jpg" />
+        <img class="desktop" src="./images/desktop/image-gallery-orange.jpg" />
+        <img class="desktop" src="./images/desktop/image-gallery-cone.jpg" />
+        <img class="desktop" src="./images/desktop/image-gallery-sugarcubes.jpg" />
+        <img class="mobile" src="./images/mobile/image-gallery-milkbottles.jpg" />
+        <img class="mobile" src="./images/mobile/image-gallery-orange.jpg" />
+        <img class="mobile" src="./images/mobile/image-gallery-cone.jpg" />
+        <img class="mobile" src="./images/mobile/image-gallery-sugar-cubes.jpg" />
       </div>
       <div id="info">
         <img id="logo" src="./images/logo.svg" alt="sunnyside" />
@@ -159,13 +168,14 @@
           <a class="icon" href="#"><img src="./images/icon-twitter.svg" /></a>
           <a class="icon" href="#"><img src="./images/icon-pinterest.svg" /></a>
         </div>
-        <div class="attribution">
-          Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            >Frontend Mentor</a
-          >. Coded by <a href="#">Katarina Zrnkarevic</a>.
-        </div>
       </div>
     </footer>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/katarinazrn" target="_blank">Katarina Zrnkarevic</a>.
+    </div>
   </body>
+  <script src="./main.js"></script>
 </html>
