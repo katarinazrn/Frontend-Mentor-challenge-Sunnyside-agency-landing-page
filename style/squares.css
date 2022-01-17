@@ -1,0 +1,110 @@
+#squares {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.square {
+  background-color: var(--background);
+  box-sizing: border-box;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 6%;
+  width: 50%;
+  height: auto;
+}
+
+.square.img {
+  padding: 0;
+}
+
+.square img {
+  width: 100%;
+  height: 100%;
+}
+
+.square h2 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.square p {
+  line-height: 18px;
+  color: var(--grayish-blue);
+  font-size: 11px;
+  margin: 10px 0;
+  font-weight: 700;
+  font-family: "Barlow", sans-serif;
+}
+
+.square a {
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  padding: 5px 5px 0 5px;
+  font-weight: 900;
+}
+
+.square a span {
+  width: fit-content;
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+  padding: 5px 5px 0 5px;
+  font-weight: 900;
+  font-size: 12px;
+}
+
+.square .underline {
+  border-radius: 10px;
+  z-index: 100;
+  height: 8px;
+  width: 100%;
+  padding: 0;
+  margin-top: -6px;
+}
+
+.square .underline#yellow {
+  background-color: rgba(255, 196, 0, 0.267);
+}
+
+.square .underline#pink {
+  background-color: rgba(255, 0, 76, 0.192);
+}
+
+.text-over {
+  position: relative;
+}
+
+.text-over .text {
+  width: 50%;
+  position: absolute;
+  text-align: center;
+  margin-top: auto;
+  bottom: 0;
+}
+
+.text-over .text p {
+  padding: 0 18%;
+}
+
+.text-over h3 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+}
+
+.text-over #blue,
+.text-over #blue p {
+  color: var(--dark-blue);
+}
+
+.text-over #gray,
+.text-over #gray p {
+  color: var(--dark-desaturated-cyan);
+}

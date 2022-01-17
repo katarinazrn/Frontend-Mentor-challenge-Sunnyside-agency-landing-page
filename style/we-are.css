@@ -1,0 +1,55 @@
+#we-are{
+    display: flex;    
+    padding:0;
+    margin: 0;
+}
+
+#we-are #bg{
+    width: 100%;
+    position: relative;
+}
+
+#center{
+    position: absolute;
+    display: flex;
+    top: 25%;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 100;
+}
+
+#we-are h1{
+    text-align: center;
+    margin: 0 auto;
+    color: var(--white);
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+#arrow{
+    margin: 20px auto;
+    width: 36px;
+    height: 114px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
